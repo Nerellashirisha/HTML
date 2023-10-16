@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+		.abc{
+			background-color:cyan;
+			display:flex;
+			flex-direction:row;
+			height:200px;
+			justify-content:flex-end;
+			align-items:center;
+			}
+		.child{
+			background-color:pink;
+			padding:5px;
+			margin:2px;
+			border-radius:15px;
+			}
+		#c1{
+			order:2;
+			flex-grow:2;
+			}
+		#c2{
+			order:3;
+			flex-grow:2;
+		}
+		#c3{
+			order:1;
+			flex-grow:2;
+			align-self:flex-start;
+		}
+
+
+
+</style>
+</head>
+<body>
+<div class="abc">
+<p class="child" id="c1">home</p>
+<p class="child" id="c2">about </p>
+<p class="child" id="c3">contactus</p>
+</div>
+</body>
+</html>
