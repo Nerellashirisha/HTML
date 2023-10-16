@@ -1,0 +1,309 @@
+<html>
+	<head>
+	<title>table</title>
+	</head>
+	<body bgcolor="lightgreen" >
+		<table cellpadding="4px" cellspacing="4px" align="center">
+			<form action="https://www.w3schools.com/tags/att_input_pattern.asp">
+			<tr>
+				<th colspan="2" bgcolor="lightgray">APPLICATION FORM</th>
+			</tr>
+			<tr>
+				<td><label for=fname>FirstName</label></td>
+				<td><input type=text name=fname required placeholder="enter your firstname"></td>
+			</tr>
+		
+			<tr>
+				<td><label for=lname>LastName</label></td>
+				<td><input type=text name=lname required placeholder="enter  your surname"></td>
+			</tr>
+		
+			<tr>
+				<td><label for=mail>Email Address</label></td>
+				<td><input type=email name=mail placeholder="enter your email " size=25></td>
+			</tr>
+		
+			<tr>
+				<td><label for=pwd>Password</label></td>
+				<td><input type=password name=pwd></td>
+			</tr>
+		
+			<tr>
+				<td><label for=conform>Conform Password</td>
+				<td><input type=password name=conform></td>
+			</tr>
+	
+			<tr>
+				<td><label for=mobile>Mobile Number</td>
+				<td><select>
+					<option>+91</option>
+					<option>+92</option>
+					<option>+93</option>
+					<option>+94</option>
+					<option>+95</option>
+					<option>+96</option>
+					<option>+97</option>
+					<option>+98</option>
+					</select>
+					<input type=tel name=mobile></td>
+			</tr>
+		
+			<tr>
+				<td><label for=experience>Work Experience:</td>
+				<td><input type=number name=experience min=4 max=9></td>
+			</tr>
+	
+			<tr>
+				<td><label for=pin>Pincode:</td>
+				<td><input type=tel name=pin pattern=[0-9]{6}></td>
+			</tr>
+		
+			<tr >
+				<td rowspan=2><label for=gender>Choose Gender</label></td>
+				<td><input type=radio name=gender value=male><label for=gender>Male</label></td>
+			</tr>
+				
+			<tr>
+				<!--<td>	</td>-->
+				<td>
+					<input type=radio name=gender value=female checked>
+					<label for=gender>Female</label>
+				</td>
+			</tr>
+		
+			<tr>
+				<td rowspan=3>
+					<label for=languages>Languages Known</label>
+				</td>
+				
+				<td>
+					<input type=checkbox name=languages checked>
+					<label for=languages>English</label>
+				</td>
+			</tr>
+				
+				
+			<tr>
+				<!--<td>	</td>-->
+				<td>
+					<input type=checkbox name=languages>
+					<label for=languages>Telugu</label>
+				</td>
+				
+			</tr>
+			
+			<tr>
+				<!--<td>	</td>-->
+				<td>
+					<input type=checkbox name=languages>
+					<label for=languages>Hindi</label>
+				</td>
+			</tr>
+		
+			<tr>
+				<td><label for=bdy>Choose Your DOB</label></td>
+				<td><input type=date name=bdy></td>
+			</tr>
+		
+			<tr>
+				<td><label for=resume>Upload Your CV</label></td>
+				<td><input type=file name=resume></td>
+			</tr>
+			
+			<tr>
+			<th colspan=2 bgcolor=lightgray>
+				<label for=education>ACADEMIC DETAILS</label></th>
+				</tr>
+				
+				
+			<tr>
+				<td rowspan=3>
+					<label for=education1>Under graduation details</label>
+				</td>
+				<td><label>College Name <label>
+					<input list=college>
+					<datalist id=college >
+						<option value="princeton">
+						<option value="jntuh">
+						<option value="vbit">
+						<option value="mlrit">
+						<option value="sits">
+						<option value="jits">
+					</datalist>
+					</td>
+					</tr>
+					
+			<tr>
+				<!--<td></td>-->
+				<td>
+					<label for=year>Year of Passout</label>
+					<input type=date name=year>
+				</td>
+			</tr>
+					
+			<tr>
+				<!--<td></td>-->
+				<td>
+					<label for=percen>Percentage/CGPA</label>
+					<input type=text name=percen>
+				</td>
+			</tr>
+					
+			<tr>
+				<td rowspan=3>
+					<label for=education2>Inter/Diploma  details</label>
+				</td>
+				<td>
+					<label>College Name</label>
+					<!--<input list=college1>-->
+					<datalist>
+						<option value="govt inter">
+						<option value="gove polytechnic">
+						<option value="laxman college">
+						<option value="mlrit college">
+						<option value="sits college">
+						<option value="srichaithanya">
+					</datalist>
+					
+				</td>
+			</tr>
+					
+			<tr>
+				<!--<td></td>-->
+				<td>
+					<label for=year>Year of Passout</label>
+					<input type=date name=year>
+				</td>
+			</tr>
+					
+			<tr>
+				<!--<td></td>--->		
+				<td>
+					<label for=percen1>Percentage/CGPA</label>
+					<input type=text name=percen>
+				</td>
+			</tr>
+					
+					
+			<tr>
+				<td rowspan=3>
+					<label for=education3>SSC Details<label>
+				</td>
+				<td>
+					<label>School Name</label>
+					<input list=school >
+					<datalist id=school selected>
+						<option value="KGBV">
+						<option value="zphs">
+						<option value="singaraya school">
+						<option value="kerala model ">
+						<option value="govt model school">
+						<option value="srichaithanya private school">
+					</datalist>
+				</td>
+			</tr>
+					
+			<tr>
+				<!--<td></td>-->
+				<td>
+					<label for=year>Year of Passout</label><input type=date name=year>
+				</td>
+			</tr>
+					
+			<tr>
+				<!--<td></td>-->
+			
+				<td>
+					<label for=percen>Percentage/CGPA</label>
+					<input type=text name=percen>
+				</td>
+			</tr>
+					
+			<tr >
+				<th colspan=2 bgcolor=lightgray>
+					<label>CHOOSE YOUR SKILLS</label>
+				</th>
+			
+				</tr>
+				
+				<tr>
+				<td>
+				<label for=Tskils>Technical skills</label>
+				</td>
+				
+				<td><input list=skills >
+				<datalist id=skills multiple>
+					
+							<option value="core java">
+							<option value="Advance java">
+							<option value="Html">
+							<option value="CSS"
+							<option value="Spring Boot">
+							<option value="Python">
+					</datalist>
+				</td>
+				</tr>
+				
+				
+				<tr>
+				<td>
+					<label for=Nskills>Non-Technical skills</label>
+				</td>
+				<td>
+				<input list=skills>
+				<datalist id=skills>
+					
+							<option value="Hardworker">
+							<option value="quick learner">
+							<option value="computer knowledge">
+							<option value="easy to communicate">
+							</datalist>
+				</td>
+				</tr>
+					
+			
+			
+			<tr>
+				<td>
+					<label for=role>Why should we hire you?</lablel>
+				</td>
+				<td>
+					<textarea rows=4 cols=20 style="resize:none" id=role>
+					</textarea>
+				</td>
+			</tr>
+			
+			<!--<tr>
+				<td>
+					<label for=hidden>Hidden Fields</label>
+				</td>
+				<td>
+					<input type=hidden name=hidden></td>
+			</tr>-->
+			<tr>
+			<td><label for=profile>Do you have Social Media Profiles?</label>
+			</td>
+			<td>
+			<input type=text placeholder="ex:linkedln, Naukri.com">
+			</textarea>
+			<td>
+			</tr>
+			<tr>
+				<td>
+					<input type=button value=SAVE onclick="alert('check the details')">
+					<input type=button value=PREVIEW onclick="confirm('if u click on ok, the form will be conformed and will not allow you to change the details')">
+				</td>
+			<!--</tr>
+			
+			<tr>-->
+				<td>
+					<input type=checkbox  required>
+					<input type=submit value=SUBMIT>
+					<input type=reset value=RESET></td>
+			</tr>
+	
+		</form>
+	</table>
+
+</body>
+</html>

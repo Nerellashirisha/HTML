@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>forms</title>
+	<style>
+			body{
+			background-color:cyan;
+			
+			}
+			input[type=text]:hover{
+						background-color:pink;
+						color:blue;
+						}
+		input[type=email]:hover,input[type=password]:hover{
+						background-color:pink;
+						}
+		input[type=submit]{
+		border-style:none;
+		background-color:gray;
+		color:white;
+		}
+		input[type=submit]:hover{
+					border-radius:6px;
+					background-color:black;
+					color:yellow;
+					border-style:none;
+					}
+		input[type=reset]{
+					border-style:none;
+					background-color:gray;
+					color:white;
+						}
+		input[type=reset]:hover{
+					border-radius:6px;
+					background-color:black;
+					color:yellow;
+					border-style:none;
+					}
+					input[type=button]{
+		border-style:none;
+		background-color:gray;
+		color:white;
+		}
+		input[type=button]:hover{
+					border-radius:6px;
+					background-color:black;
+					color:yellow;
+					border-style:none;
+					}
+		input[type=tel]:hover,input[type=number]:hover
+						{background-color:pink;
+					}
+		select:hover{
+					background-color:pink;
+					}
+		input[type=file]:hover{
+		border-radius:6px;;
+		background-color:gray;
+		}			
+		textarea:hover{
+					border-radius:6px;
+					background-color:skyblue;
+					color:pink;
+					}
+		
+		
+		
+		
+		
+	</style>
+
+</head>
+<body>
+<form action="https://www.w3schools.com/tags/att_input_pattern.asp">
+<fieldset>
+<legend align=center><h1>APPLICATION FORM</h1></legend>
+	<label for=fname>FIRST-NAME</label>
+	<input type=text name=fname value=siri required ><br><br>
+	
+	<label for=lname>LAST-NAME</label>
+	<input type=text name=lname placeholder=ex:suname required ><br><br>
+	
+	<label for=mail>EMAIL-ADDRESS</label>
+	<input type=email name=mail  ><br><br>
+	
+	<label for=pwd>PASSWORD</label>
+	<input type=password name=pwd pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
+	
+	<label for=phone>MOBILE-NO</label>
+	<select>
+	<option>+91</option>
+	<option>+92</option>
+	<option>+93</option>
+	<option>+95</option>
+	<option>+94</option>
+	<option>+96</option>
+	<option>+97</option>
+	<option>+98</option>
+	<option>+99</option>
+	</select>
+	
+	<input type=tel name=phone pattern=[0-9]{10}><br><br>
+	
+	<p>LANGUAGES KNOWN</p>
+	<input type=checkbox name=languages>
+	<label for=languages>ENGLISH</label><br>
+	<input type=checkbox name=languages>
+	<label for=languages>TELUGU</label><br>
+	<input type=checkbox name=languages>
+	<label for=languages>HINDI</label><br>
+	
+	<p>CHOOSE YOUR GENDER</p>
+	<input type=radio name=gender>
+	<label for=gender>MALE</label><br>
+	
+	<input type=radio name=gender>
+	<label for=gender>FEMALE</label><br>
+	
+	<input type=radio name=gender>
+	<label for=gender>TRANSEGENDER</label><br><br>
+	
+	<label for=EXPERIENCE>WORK-EXPERIENCE</label>
+	<input type=number name=experience min=5 max=8><br><br>
+	
+	<label for=bdy>CHOOSE BIRTHDAY</label>
+	<input type=date name=bdy><br><br>
+	
+	<label for=addres>ENTER YOUR PRESENT ADDRESS</label>
+	<textarea rows="5" cols="20" style=resize:none id=address>
+	</textarea>
+	<br><br>
+		<label for=file>UPLOAD YOUR RESUME</label>
+	<input type=file name=file type=".pdf"><br><br>
+	
+	
+	<label>CHOOSE YOUR SKILLS</labe>
+	<select size=4 multiple>
+		<option value="cjava">core java</option>
+		<option value="ajava">Advance java</option>
+		<option value="html">html</option>
+		<option value="css">css</option>
+		<option value="sp">spring boot</option>
+		<option value=py>python</option>
+	</select>
+	<br><br>
+	<label>CHOOSE YOUR COLLEGE</label>
+	<input list=college>
+	<datalist id=college>
+			<option value=petw>
+			<option value=mlrit>
+			<option value=vbit>
+			<option value=vasavi>
+			<option value=sits>
+			<option value=anurag>
+			<option value=jits>
+			<option value=pallavi>
+	</datalist>
+	<br>
+<br>	
+	<label for=hidden>HIDDEN FIELDS</label>
+	<input type=hidden name=hidden><br><br>
+	
+	<input type=button value=click!! onclick="alert('hello all')"><br><br>
+	<input type=button value=click!! onclick="confirm('hai')"><br><br>
+	
+	
+	<input type=submit value=Register>
+	<input type=reset value=Reset>
+	</fieldset>
+	</form>
+</body>
+</html>
+
